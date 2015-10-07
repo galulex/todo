@@ -1,0 +1,8 @@
+<%= form_for Task.new, remote: true do |f| %>
+  <%= f.text_field :body %>
+  <%= f.submit 'OK' %>
+<% end %>
+
+<ol id='tasks'>
+  <%= render @tasks %>
+</ol>
